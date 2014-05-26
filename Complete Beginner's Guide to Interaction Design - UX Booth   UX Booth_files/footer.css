@@ -1,0 +1,218 @@
+/* @override http://local.uxbooth.com/wordpress/wp-content/themes/uxbooth/stylesheets/footer.css */
+
+/* @override http://local.uxbooth.com/wordpress/wp-content/themes/uxbooth/stylesheets/footer.css */
+
+/* @override http://local.uxbooth.com/wordpress/wp-content/themes/uxbooth/stylesheets/footer.css */
+
+/* @override http://local.uxbooth.com/wordpress/wp-content/themes/uxbooth/stylesheets/footer.css */
+
+/* @group bootstrap */
+
+footer#footer {
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
+  color: #8ab2c0;
+}
+
+#footer h1{ display: none; }
+
+footer#footer p,
+footer#footer li{
+	font-size: 12px;
+	line-height: 1.4em;
+}
+
+footer#footer a{ color: #bfd051; }
+footer#footer a:hover{ color: #6a8410; }
+
+footer#footer span.b{
+	font-variant: small-caps;
+	font-style: normal;
+	font-size: 11px;
+}
+
+footer#footer span.ux{
+  text-transform: lowercase;
+  font-variant: normal;
+  font-style: italic;
+}
+
+/* @end */
+
+/* @group about us */
+
+footer#footer section.about-us {
+	width: 392px;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 24px;
+	margin-bottom: 0.8em;
+
+}
+
+footer#footer section.about-us p{
+	font-size: 14px;
+	line-height: 1.6em;
+	font-family: abril-text-1, abril-text-2, Georgia, Serif;
+}
+
+footer#footer section.about-us p span.lead{
+	color: white;
+
+}
+
+footer#footer section.about-us p a{ color: #50bce0; }
+footer#footer section.about-us p a:hover{ color: #3385ac; }
+
+/* @end */
+
+/* @group nav */
+
+footer#footer nav{
+  width: 331px;
+  margin-right: 6px;
+  float: left;
+}
+
+footer#footer nav::after,
+footer#footer nav ul::after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+footer#footer nav ul{
+	border-left: 1px solid #21545d;
+	float: left;
+	width: 150px;
+	padding-left: 11px;
+}
+
+footer#footer nav ul li a{
+	display: block;
+	line-height: 1.6em;
+}
+
+
+
+/* @end */
+
+/* @group subscription options */
+
+section#join-the-community{
+	width: 230px;
+	float: left;
+}
+
+section#join-the-community h1{ display: none; }
+
+section#join-the-community li{
+	float: left;
+	width: 73px;
+	padding-left: 36px;
+	position: relative;
+	margin-right: 12px;
+}
+
+section#join-the-community li.twitter{
+	margin-right: 0;
+}
+
+section#join-the-community li span.count{
+	font-family:  Georgia, Times;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	z-index: 2;
+}
+
+section#join-the-community li span.constituents{
+	display: block;
+	font-size: 9px;
+	margin-top: 0.6em;
+	line-height: 12px;
+	  font-family: Trebuchet MS;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	color: #728f99;
+	text-shadow: #0f2226 1px 1px 0;
+}
+
+
+section#join-the-community li span.icon{ 
+	background: url(images/icons.png);
+	display: block;
+	width: 28px; 
+	height: 28px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -12px;
+}
+
+
+section#join-the-community li.rss a span.icon{  background-position: 0 0; }
+section#join-the-community li.rss a:hover span.icon{  background-position: 0 -28px; }
+section#join-the-community li.twitter a span.icon{ background-position: -28px 0; }
+section#join-the-community li.twitter a:hover span.icon{ background-position: -28px -28px; }
+
+section#join-the-community li span.service{ display: none; }
+
+section#join-the-community li.plain{
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+/* @end */
+
+/* @group copyright */
+
+section#copyright-and-hosting{
+	clear: both;
+	font-family: Abril-text-1, Abril-text-2, Georgia, Times;
+	font-size: 12px;
+	color: #6f9ba9;
+	border-top: 1px solid #235160;
+	padding-top: 9px;
+	padding-bottom: 6px;
+	margin-right: 162px;
+	position: relative;
+}
+
+footer a#engine-hosting{
+  font-style: italic;
+  color: #6f9ba9;
+  position: absolute;
+  right: 0;
+  top: 0.6em;
+  white-space: nowrap;
+  padding-right: 0.8em;
+}
+
+footer a#engine-hosting:hover{ color: white; }
+footer a#engine-hosting:hover span.icon{ background-position: 0 -26px; }
+
+
+a#engine-hosting span.label{ display: none; }
+a#engine-hosting span.icon{
+	position: absolute;
+	width: 154px;
+	height: 26px;
+    background: url(images/engine_hosting.gif) top no-repeat;	
+    left: 100%;
+    margin-left: 8px;
+    bottom: -2px;
+}
+
+/* @end */
+
+
+@media screen and (max-width: 480px) {
+	footer#footer{ text-align: center; }
+}

@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.open.ac.uk/courses/modules/m364 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head id="head"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	M364 - Fundamentals of interaction design - Open University Course
+</title><meta name="description" content="Open University is the UK&#39;s largest university for part-time higher education. Learn about undergraduate certificates, diplomas, degrees, and modules."> 
+<meta charset="UTF-8"> 
+<meta name="keywords" content="qualification, course, module"> 
+<link href="./M364 - Fundamentals of interaction design - Open University Course_files/GetResource.ashx" type="text/css" rel="stylesheet"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      
+      <script src="./M364 - Fundamentals of interaction design - Open University Course_files/modernizr-2.6.2.min.js"></script>
+	  
+	  <link rel="stylesheet" href="http://www.open.ac.uk/oudigital/headerandfooter/assets/css/headerandfooter.css">
+      <link rel="stylesheet" href="http://www.open.ac.uk/oudigital/eep/assets/css/screen.css">
+      <link rel="stylesheet" href="http://www.open.ac.uk/oudigital/eep/assets/css/kentico-custom-styles.css">
+      <link rel="stylesheet" href="http://www.open.ac.uk/oudigital/headerandfooter/assets/css/ou-df-header.css">
+            
+     <!--[if lt IE 9]>
+            <link rel="stylesheet" href="/oudigital/eep/assets/css/ie8.css">
+	        <link rel="stylesheet" href="/oudigital/headerandfooter/assets/css/headerandfooter-ie.css">
+	  <![endif]-->
+            
+      <!--[if lt IE 8]>
+            <link rel="stylesheet" href="/oudigital/eep/assets/css/ie.css">
+      <![endif]-->
+
+      <!--[if IE 7]>
+            <link rel="stylesheet" href="/oudigital/eep/assets/fonts/fontawesome/css/font-awesome-ie7.css">
+      <![endif]-->
+	  
+	  <link rel="stylesheet" href="http://www.open.ac.uk/oudigital/eep/assets/css/print.css" media="print">
+
+      <!-- favicons -->
+      <link rel="apple-touch-icon" href="http://www.open.ac.uk/oudigital/external/assets/img/favicons/apple-touch-icon.png">
+      <link rel="icon" href="http://www.open.ac.uk/oudigital/external/assets/img/favicons/favicon.png">
+      <link rel="shortcut icon" href="http://www.open.ac.uk/oudigital/external/assets/img/favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/oudigital/external/assets/img/favicons/ie10-win8-tile-icon.png">
+
+      <script type="text/javascript" src="./M364 - Fundamentals of interaction design - Open University Course_files/ou-df-header.js"></script>
+      <script type="text/javascript">if (typeof window.ou_sitestat == 'function') ou_sitestat();</script> 
+<link href="http://www.open.ac.uk/courses/favicon.ico" type="image/x-icon" rel="shortcut icon"> 
+<link href="http://www.open.ac.uk/courses/favicon.ico" type="image/x-icon" rel="icon"> 
+ 
+<meta name="description" content="Acquire practical skills and theoretical tools to analyse, design and evaluate interactive products that surround our everyday lives &amp;ndash; from websites to drinks dispensers."><meta name="keywords" content="M364, Fundamentals of interaction design, Computing and IT, Computing and IT, undergraduate course, Open University"></head>
+<body class="LTR Safari Chrome Safari34 Chrome34 ENGB ContentBody" data-page-id="ou-page-courses">
+    <form method="post" action="http://www.open.ac.uk/courses/modules/m364.aspx" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODc3OTc4NjAwD2QWAgIBEGRkFgICBQ9kFgJmD2QWAmYPZBYCAgUPZBYCZg9kFgICAg9kFgJmD2QWAmYPZBYcAgEPZBYCZg9kFgJmD2QWAmYPFgIeC18hSXRlbUNvdW50AgFkAgMPZBYCAgEPZBYCZg9kFgJmDxYCHwACAWQCBQ9kFgRmD2QWAmYPZBYCZg8WAh8AAgFkAgEPZBYCZg9kFgJmDxYCHwACAWQCBw9kFgJmD2QWAmYPZBYCZg8WAh8AAgFkAgkPZBYCAgEPDxYCHgdWaXNpYmxlaGRkAgsPZBYCZg9kFgJmD2QWAmYPFgIfAAIBZAIND2QWAmYPZBYCZg9kFgJmDxYCHwACAWQCDw9kFgJmD2QWAmYPZBYCZg8WAh8AAgFkAhEPZBYGZg9kFgJmD2QWAmYPFgIfAAIBZAIBD2QWAmYPZBYCZg8WAh8AAgFkAgIPZBYCZg9kFgJmDxYCHwACAWQCEw9kFghmD2QWAmYPZBYCZg8WAh8AAgFkAgEPZBYCZg9kFgJmDxYCHwACAWQCAg9kFgJmD2QWAmYPFgIfAAIBZAIDD2QWAmYPZBYCZg8WAh8AAgFkAhUPZBYEZg9kFgJmD2QWAmYPFgIfAAIBZAIBD2QWAmYPZBYCZg8WAh8AAgFkAhcPZBYCZg9kFgJmD2QWAmYPFgIfAAIBZAIZD2QWBGYPZBYCZg9kFgJmDxYCHwACAWQCAQ9kFgJmDxYCHwFoZAIbD2QWBGYPZBYCZg9kFgJmDxYCHwACAWQCAQ9kFgJmD2QWAmYPFgIfAAIBZGTE5l2BJosJLnhqWdCMgPIjmSbKimwdaNRMhPgIg93AZg==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/GetResource(1).ashx" type="text/javascript"></script>
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/GetResource(2).ashx" type="text/javascript"></script><input type="hidden" name="lng" id="lng" value="en-GB">
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/GetResource(3).ashx" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }__doPostBack('m',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }WebForm_DoCallback('m',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/ScriptResource(1).axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+<div id="CMSHeaderDiv">
+	<!-- -->
+</div>
+    <div id="ctxM">
+
+</div>
+    
+<script type="text/javascript">
+  // Reset the Jquery $ notation.
+  var $ = jQuery.noConflict();
+  
+</script>
+
+
+<!-- Start of generic site template markup -->
+ <div id="int-site" tabindex="-1" style="outline: 0px;">
+  
+   <!-- Load the common header -->
+   <!-- Header -->
+		<a href="http://www.open.ac.uk/courses/modules/m364#int-content" id="int-skip-link" class="btn-skip">
+            <i class="int-icon int-icon-chevron-down"></i>
+            <span> Skip to content</span>
+        </a>
+		
+		<div id="int-ouHeader" role="banner">
+		
+            <!--Header -->
+            <div id="int-header">
+                
+                <a class="int-ouLogo" href="http://www.open.ac.uk/">
+                    <img src="./M364 - Fundamentals of interaction design - Open University Course_files/ou-logo.png" alt="The Open University">
+                </a>
+                <div role="navigation" id="int-serviceLinks" class="int-serviceLinks sg-responsive int-container">
+                    <ul>
+                        <li class="ou-role-signin" id="ou-signin1">
+                            <a href="https://msds.open.ac.uk/signon/sams001.aspx?nsh=2&URL=http://www.open.ac.uk/courses/modules/m364" id="ou-signin2">Sign in</a> <span>|</span>
+                        </li>
+                        <li>
+                            <a href="https://msds.open.ac.uk/students/">My account</a> <span>/</span>
+                        </li>
+                        <li id="ou-signout" class="ou-role-signout">
+                            <a href="https://msds.open.ac.uk/signon/samsoff.aspx" id="ou-signout2">Sign out</a> <span>|</span>
+                        </li>
+                        <li>
+                            <a href="http://www.open.ac.uk/contact">Contact us</a> <span>|</span>
+                        </li>
+                        <li id="ou-studenthome" class="ou-role-studenthome">
+                            <a href="http://www.open.ac.uk/students/" id="ou-studenthome2">Current students</a>
+                        </li>
+                        <li class="int-headerSearch">
+                            <div class="int-inputAppend">
+								<fieldset>
+                                    <legend class="int-hide">Site search</legend>
+                                    <label for="headerSearch" class="int-hide">Search</label>
+                                    <input id="headerSearch" type="search" placeholder="Search...">
+                                    <a id="headerSearchButton" href="http://www.open.ac.uk/courses/modules/m364#" class="int-button" onclick="javascript:ou_search();" role="button">Search</a> 
+                                </fieldset>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-mob-menu-toggle">
+                        <span>Menu title</span>
+                        <i class="int-icon int-icon-chevron-down"></i>
+                        <i class="int-icon int-icon-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <!--end of Header -->
+			
+            <div role="navigation" id="ou-global-primary-navigation" class="ou-df-header-nav">
+                <div class="int-primary">
+                    <div class="int-toplevel-nav int-nav-level" id="OU-1" role="navigation" aria-haspopup="true" aria-selected="false" aria-owns="OU-2">
+                        <ul class="int-container" role="menu" aria-expanded="true" aria-hidden="false">
+                            <li class="ou-df-ia-home int-home" role="menuitem"><a href="http://www.open.ac.uk/"><span>Home</span></a></li>
+                            <li class="ou-df-ia-courses int-nav-active int-hasChildren" role="menuitem"><a href="http://www.open.ac.uk/courses"><span class="ou-page-courses" id="OU-4">Courses</span></a>
+                                <ul>
+                                    <li><a href="http://www.open.ac.uk/courses/atoz"><span class="ou-page-courses-atoz">A to Z of subjects</span></a></li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/types"><span class="ou-page-courses-types">Course types</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/degrees"><span class="ou-page-courses-types-honours">Honours degrees</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/foundation-degrees"><span class="ou-page-courses-types-foundation">Foundation degrees</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/diplomas-he"><span class="ou-page-courses-types-diplomas-he">Diplomas of Higher Education</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/certificates-he"><span class="ou-page-courses-types-certificates-he">Certificates of Higher Education</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/diplomas-ou"><span class="ou-page-courses-types-diplomas-ou">Open University diplomas</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/certificates-ou"><span class="ou-page-courses-certificates-ou">Open University certificates</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/modules"><span class="ou-page-courses-types-modules">Modules</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/short-courses"><span class="ou-page-courses-types-short">Short courses</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/all"><span class="ou-page-courses-types-courses">All courses</span></a></li>
+										</ul>
+									</li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/careers"><span class="ou-page-courses-careers">Careers</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/careers/counselling"><span class="ou-page-courses-careers-counselling">Careers in counselling</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/psychology"><span class="ou-page-courses-careers-psychology">Careers in psychology</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/teaching"><span class="ou-page-courses-careers-teaching">Careers in teaching</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/working-with-children"><span class="ou-page-courses-careers-children">Working with children</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/social-work"><span class="ou-page-courses-careers-social">Careers in social work</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/management"><span class="ou-page-courses-careers-management">Careers in management</span></a></li>
+										</ul>
+									</li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/what-study-like"><span class="ou-page-courses-whatitslike">What it's like to study</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/distance-learning"><span class="ou-page-courses-whatitslike-distance">Distance learning</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/tutor-support"><span class="ou-page-courses-whatitslike-tutor">Tutor support</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/learning-resources"><span class="ou-page-courses-whatitslike-resources">Learning resources</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/community"><span class="ou-page-courses-whatitslike-community">The OU community</span></a></li>
+										</ul>
+									</li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/do-it"><span class="ou-page-courses-doit">Can I do it?</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/do-it/finding-time"><span class="ou-page-courses-doit-time">Finding time to study</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/english-skills"><span class="ou-page-courses-doit-english">Is my English good enough ?</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/access"><span class="ou-page-courses-doit-access">Access</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/computing-skills"><span class="ou-page-courses-doit-computing">Computing skills</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/disability"><span class="ou-page-courses-doit-disability">Disability</span></a></li>
+										</ul>
+									</li>
+                                    <li><a href="http://www.open.ac.uk/courses/fees-and-funding"><span class="ou-page-courses-fees">Fees and funding</span></a></li>
+									<li><a href="http://www.open.ac.uk/courses/apply"><span class="ou-page-courses-apply">How to apply</span></a></li>
+                                </ul>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-2" aria-labelledby="OU-4"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                            <li class="ou-df-ia-postgraduate int-hasChildren" role="menuitem">
+                                <a href="http://www.open.ac.uk/postgraduate"><span class="ou-page-postgraduate" id="OU-5">Postgraduate</span></a>
+                                <ul>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/fees-and-funding"><span class="ou-page-postgraduate-fees">Fees and funding</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/atoz"><span class="ou-page-postgraduate-atoz">A to Z of subjects</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/why-ou"><span class="ou-page-postgraduate-whyou">Why the OU?</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/research-degrees"><span class="ou-page-postgraduate-research">Research degrees</span></a></li>
+                                </ul>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-2" aria-labelledby="OU-5"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                            <li class="ou-df-ia-research int-hasChildren" role="menuitem">
+                                <a href="http://www.open.ac.uk/research/main/"><span id="OU-6">Research</span></a>
+                                <ul>
+                                    <li><a href="http://www.open.ac.uk/research/main/our-research"><span>Our research</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/research-impact"><span>Research impact</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/research-careers"><span>Research careers</span></a>
+                                        <ul>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/academics"><span>Academics</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/researchers-and-research-fellows"><span>Research fellows</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/research-students"><span>Research students</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/visiting-and-emeritus-academics"><span>Visits and Emeritus</span></a></li>
+                                        </ul>            
+                                    </li>
+                                    <li>
+										<a href="http://www.open.ac.uk/research/main/open-for-business"><span>Open for business</span></a>
+                                        <ul>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/collaboration-and-knowledge-exchange"><span>Collaboration and knowledge exchange</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/consultancy-and-licensing"><span>Consultancy and licensing</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/develop-your-people"><span>Develop your people</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/facilities"><span>Facilities</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/partnerships-and-networks"><span>Partners and networks</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/work-with-our-students"><span>Work with our students</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://www.open.ac.uk/research/main/news"><span>News</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/our-people"><span>Our people</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/contact-us"><span>Contact</span></a></li>
+                                </ul>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-2" aria-labelledby="OU-6"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                            <li class="ou-df-ia-about int-hasChildren" role="menuitem">
+                                <a href="http://www.open.ac.uk/about/main/"><span id="OU-7">About</span></a>
+                                <ul>
+                                    <li><a href="http://www.open.ac.uk/about/main/the-ou-explained"><span>OU explained</span></a>
+                                        <ul>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/the-ous-mission"><span>The OU's mission</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/teaching-and-learning-the-ou"><span>Teaching and learning at the OU</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/facts-and-figures"><span>Facts and figures</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/history-the-ou"><span>History of the OU</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/partnerships"><span>Collaborations and partnerships</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/faculties-and-research-centres"><span>Faculties and centres</span></a>
+                                        <ul>
+                                            <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/national-and-regional-centres"><span>National and regional centres</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/the-ou-outside-the-uk"><span>Outside the UK</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/milton-keynes-campus"><span>Milton Keynes campus</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://www.open.ac.uk/about/main/vice-chancellor"><span>Vice-Chancellor</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/about/main/admin-and-governance"><span>Admin and governance</span></a></li>
+                                </ul>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-2" aria-labelledby="OU-7"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                            <li class="ou-df-ia-news" role="menuitem"><a href="http://www.open.ac.uk/news"><span>News &amp; media</span></a></li>
+                            <li class="ou-df-ia-employers" role="menuitem"><a href="http://www.open.ac.uk/employers"><span>Employers</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="int-secondlevel-nav int-nav-level" id="OU-2" role="navigation" aria-haspopup="true" aria-selected="false" aria-owns="OU-3"><ul class="int-container" role="menu" aria-expanded="true" aria-hidden="false">
+                                    <li role="menuitem"><a href="http://www.open.ac.uk/courses/atoz"><span class="ou-page-courses-atoz">A to Z of subjects</span></a></li>
+                                    <li class="int-hasChildren" role="menuitem">
+										<a href="http://www.open.ac.uk/courses/types"><span class="ou-page-courses-types" id="OU-8">Course types</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/degrees"><span class="ou-page-courses-types-honours">Honours degrees</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/foundation-degrees"><span class="ou-page-courses-types-foundation">Foundation degrees</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/diplomas-he"><span class="ou-page-courses-types-diplomas-he">Diplomas of Higher Education</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/certificates-he"><span class="ou-page-courses-types-certificates-he">Certificates of Higher Education</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/diplomas-ou"><span class="ou-page-courses-types-diplomas-ou">Open University diplomas</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/certificates-ou"><span class="ou-page-courses-certificates-ou">Open University certificates</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/modules"><span class="ou-page-courses-types-modules">Modules</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/short-courses"><span class="ou-page-courses-types-short">Short courses</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/all"><span class="ou-page-courses-types-courses">All courses</span></a></li>
+										</ul>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-3" aria-labelledby="OU-8"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                                    <li class="int-hasChildren" role="menuitem">
+										<a href="http://www.open.ac.uk/courses/careers"><span class="ou-page-courses-careers" id="OU-9">Careers</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/careers/counselling"><span class="ou-page-courses-careers-counselling">Careers in counselling</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/psychology"><span class="ou-page-courses-careers-psychology">Careers in psychology</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/teaching"><span class="ou-page-courses-careers-teaching">Careers in teaching</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/working-with-children"><span class="ou-page-courses-careers-children">Working with children</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/social-work"><span class="ou-page-courses-careers-social">Careers in social work</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/management"><span class="ou-page-courses-careers-management">Careers in management</span></a></li>
+										</ul>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-3" aria-labelledby="OU-9"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                                    <li class="int-hasChildren" role="menuitem">
+										<a href="http://www.open.ac.uk/courses/what-study-like"><span class="ou-page-courses-whatitslike" id="OU-10">What it's like to study</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/distance-learning"><span class="ou-page-courses-whatitslike-distance">Distance learning</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/tutor-support"><span class="ou-page-courses-whatitslike-tutor">Tutor support</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/learning-resources"><span class="ou-page-courses-whatitslike-resources">Learning resources</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/community"><span class="ou-page-courses-whatitslike-community">The OU community</span></a></li>
+										</ul>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-3" aria-labelledby="OU-10"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                                    <li class="int-hasChildren" role="menuitem">
+										<a href="http://www.open.ac.uk/courses/do-it"><span class="ou-page-courses-doit" id="OU-11">Can I do it?</span></a>
+										<ul>
+											<li><a href="http://www.open.ac.uk/courses/do-it/finding-time"><span class="ou-page-courses-doit-time">Finding time to study</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/english-skills"><span class="ou-page-courses-doit-english">Is my English good enough ?</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/access"><span class="ou-page-courses-doit-access">Access</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/computing-skills"><span class="ou-page-courses-doit-computing">Computing skills</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/disability"><span class="ou-page-courses-doit-disability">Disability</span></a></li>
+										</ul>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-nav-trigger" role="button" aria-controls="OU-3" aria-labelledby="OU-11"><span><i class="int-icon int-icon-chevron-down"></i><i class="int-icon int-icon-chevron-up"></i></span></a></li>
+                                    <li role="menuitem"><a href="http://www.open.ac.uk/courses/fees-and-funding"><span class="ou-page-courses-fees">Fees and funding</span></a></li>
+									<li role="menuitem"><a href="http://www.open.ac.uk/courses/apply"><span class="ou-page-courses-apply">How to apply</span></a></li>
+                                </ul></div>
+                    <div class="int-thirdlevel-nav int-nav-level" id="OU-3" role="navigation" aria-haspopup="true" aria-selected="false"></div>
+                </div>
+            </div>
+            <div id="int-nav-mobile" class="int-nav-alt-mob" aria-hidden="true" role="navigation" style="display: none;">
+                <div class="int-nav-mob-overlay" role="presentation"></div>
+                <div class="int-nav-alt-primary" role="menu" id="OU-12"><ul class="int-container">
+                            <li class="ou-df-ia-home int-home"><a href="http://www.open.ac.uk/"><span>Home</span></a></li>
+                            <li class="ou-df-ia-courses int-nav-active"><a href="http://www.open.ac.uk/courses"><span class="ou-page-courses">Courses</span></a>
+                                <div class="int-nav-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToMainMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Main menu</span></a><ul>
+                                    <li><a href="http://www.open.ac.uk/courses/atoz"><span class="ou-page-courses-atoz">A to Z of subjects</span></a></li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/types"><span class="ou-page-courses-types">Course types</span></a>
+										<div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Course types</span></a><ul>
+											<li><a href="http://www.open.ac.uk/courses/degrees"><span class="ou-page-courses-types-honours">Honours degrees</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/foundation-degrees"><span class="ou-page-courses-types-foundation">Foundation degrees</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/diplomas-he"><span class="ou-page-courses-types-diplomas-he">Diplomas of Higher Education</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/certificates-he"><span class="ou-page-courses-types-certificates-he">Certificates of Higher Education</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/diplomas-ou"><span class="ou-page-courses-types-diplomas-ou">Open University diplomas</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/certificates-ou"><span class="ou-page-courses-certificates-ou">Open University certificates</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/modules"><span class="ou-page-courses-types-modules">Modules</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/short-courses"><span class="ou-page-courses-types-short">Short courses</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/all"><span class="ou-page-courses-types-courses">All courses</span></a></li>
+										</ul></div></div>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/careers"><span class="ou-page-courses-careers">Careers</span></a>
+										<div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Careers</span></a><ul>
+											<li><a href="http://www.open.ac.uk/courses/careers/counselling"><span class="ou-page-courses-careers-counselling">Careers in counselling</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/psychology"><span class="ou-page-courses-careers-psychology">Careers in psychology</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/teaching"><span class="ou-page-courses-careers-teaching">Careers in teaching</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/working-with-children"><span class="ou-page-courses-careers-children">Working with children</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/social-work"><span class="ou-page-courses-careers-social">Careers in social work</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/careers/management"><span class="ou-page-courses-careers-management">Careers in management</span></a></li>
+										</ul></div></div>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/what-study-like"><span class="ou-page-courses-whatitslike">What it's like to study</span></a>
+										<div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to What it's like to study</span></a><ul>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/distance-learning"><span class="ou-page-courses-whatitslike-distance">Distance learning</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/tutor-support"><span class="ou-page-courses-whatitslike-tutor">Tutor support</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/learning-resources"><span class="ou-page-courses-whatitslike-resources">Learning resources</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/what-study-like/community"><span class="ou-page-courses-whatitslike-community">The OU community</span></a></li>
+										</ul></div></div>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li>
+										<a href="http://www.open.ac.uk/courses/do-it"><span class="ou-page-courses-doit">Can I do it?</span></a>
+										<div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Can I do it?</span></a><ul>
+											<li><a href="http://www.open.ac.uk/courses/do-it/finding-time"><span class="ou-page-courses-doit-time">Finding time to study</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/english-skills"><span class="ou-page-courses-doit-english">Is my English good enough ?</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/access"><span class="ou-page-courses-doit-access">Access</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/computing-skills"><span class="ou-page-courses-doit-computing">Computing skills</span></a></li>
+											<li><a href="http://www.open.ac.uk/courses/do-it/disability"><span class="ou-page-courses-doit-disability">Disability</span></a></li>
+										</ul></div></div>
+									<a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li><a href="http://www.open.ac.uk/courses/fees-and-funding"><span class="ou-page-courses-fees">Fees and funding</span></a></li>
+									<li><a href="http://www.open.ac.uk/courses/apply"><span class="ou-page-courses-apply">How to apply</span></a></li>
+                                </ul></div></div>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                            <li class="ou-df-ia-postgraduate">
+                                <a href="http://www.open.ac.uk/postgraduate"><span class="ou-page-postgraduate">Postgraduate</span></a>
+                                <div class="int-nav-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToMainMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Main menu</span></a><ul>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/fees-and-funding"><span class="ou-page-postgraduate-fees">Fees and funding</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/atoz"><span class="ou-page-postgraduate-atoz">A to Z of subjects</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/why-ou"><span class="ou-page-postgraduate-whyou">Why the OU?</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/postgraduate/research-degrees"><span class="ou-page-postgraduate-research">Research degrees</span></a></li>
+                                </ul></div></div>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                            <li class="ou-df-ia-research">
+                                <a href="http://www.open.ac.uk/research/main/"><span>Research</span></a>
+                                <div class="int-nav-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToMainMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Main menu</span></a><ul>
+                                    <li><a href="http://www.open.ac.uk/research/main/our-research"><span>Our research</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/research-impact"><span>Research impact</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/research-careers"><span>Research careers</span></a>
+                                        <div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Research careers</span></a><ul>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/academics"><span>Academics</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/researchers-and-research-fellows"><span>Research fellows</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/research-students"><span>Research students</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/research-careers/visiting-and-emeritus-academics"><span>Visits and Emeritus</span></a></li>
+                                        </ul></div></div>            
+                                    <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li>
+										<a href="http://www.open.ac.uk/research/main/open-for-business"><span>Open for business</span></a>
+                                        <div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Open for business</span></a><ul>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/collaboration-and-knowledge-exchange"><span>Collaboration and knowledge exchange</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/consultancy-and-licensing"><span>Consultancy and licensing</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/develop-your-people"><span>Develop your people</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/facilities"><span>Facilities</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/partnerships-and-networks"><span>Partners and networks</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/research/main/open-for-business/work-with-our-students"><span>Work with our students</span></a></li>
+                                        </ul></div></div>
+                                    <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/news"><span>News</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/our-people"><span>Our people</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/research/main/contact-us"><span>Contact</span></a></li>
+                                </ul></div></div>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                            <li class="ou-df-ia-about">
+                                <a href="http://www.open.ac.uk/about/main/"><span>About</span></a>
+                                <div class="int-nav-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToMainMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Main menu</span></a><ul>
+                                    <li><a href="http://www.open.ac.uk/about/main/the-ou-explained"><span>OU explained</span></a>
+                                        <div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to OU explained</span></a><ul>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/the-ous-mission"><span>The OU's mission</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/teaching-and-learning-the-ou"><span>Teaching and learning at the OU</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/facts-and-figures"><span>Facts and figures</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/history-the-ou"><span>History of the OU</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/the-ou-explained/partnerships"><span>Collaborations and partnerships</span></a></li>
+                                        </ul></div></div>
+                                    <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/faculties-and-research-centres"><span>Faculties and centres</span></a>
+                                        <div class="int-nav-sub-sub-menu"><div class="int-container"><a href="http://www.open.ac.uk/courses/modules/m364#" class="int-backToSubMenu"><span><i class="int-icon int-icon-chevron-left"></i> Back to Faculties and centres</span></a><ul>
+                                            <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/national-and-regional-centres"><span>National and regional centres</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/the-ou-outside-the-uk"><span>Outside the UK</span></a></li>
+                                            <li><a href="http://www.open.ac.uk/about/main/faculties-and-centres/milton-keynes-campus"><span>Milton Keynes campus</span></a></li>
+                                        </ul></div></div>
+                                    <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                                    <li><a href="http://www.open.ac.uk/about/main/vice-chancellor"><span>Vice-Chancellor</span></a></li>
+                                    <li><a href="http://www.open.ac.uk/about/main/admin-and-governance"><span>Admin and governance</span></a></li>
+                                </ul></div></div>
+                            <a href="http://www.open.ac.uk/courses/modules/m364#" class="int-showSubMenu"><i class="int-icon int-icon-chevron-right"></i></a></li>
+                            <li class="ou-df-ia-news"><a href="http://www.open.ac.uk/news"><span>News &amp; media</span></a></li>
+                            <li class="ou-df-ia-employers"><a href="http://www.open.ac.uk/employers"><span>Employers</span></a></li>
+                        </ul></div>
+                <a href="http://www.open.ac.uk/courses/modules/m364#" id="int-nav-toggle" class="int-nav-toggle" role="button" aria-controls="OU-12">
+                    <i class="int-icon int-icon-bars int-icon-lg"></i>
+                    <i class="int-icon int-icon-times int-icon-lg"></i>
+                </a>
+            </div>
+		</div>
+		<!--end of header -->
+
+   <!-- Main Content section -->
+    <main id="int-content" tabindex="-1" style="outline: 0px;">
+      <div class="country-changer-container">
+        <div class="int-container">
+          
+
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/OU_CountryCookieManager.js"></script>
+<script src="./M364 - Fundamentals of interaction design - Open University Course_files/OU_Country_Code_Changer.js"></script>
+
+<div id="p_lt_ctl00_OU_Country_Code_Changer_divCountryChanger" class="country-changer">
+    <span id="currentCountry">You are viewing information for <strong>Kenya</strong>.&nbsp;&nbsp;</span><a class="change-country-link" href="http://www.open.ac.uk/courses/modules/m364#">Change country.</a>
+</div>
+        </div>
+      </div>
+      
+
+   
+    <!-- main content -->
+    <header class="int-course-overview">
+      
+     <!-- <div class="int-header-image">
+        <img src="/OUDigital/jwing/assets/img/course-page/course-overview.jpg" class="fullwidth" alt="">
+      </div> -->
+      
+      <div class="int-container">
+        
+               
+        <div class="int-row">
+          
+          <div class="int-grid8">
+            
+            <div class="int-social-share">
+  
+      <a href="https://facebook.com/sharer.php?u=http://www.open.ac.uk/courses/modules/M364?lkcampaign=fb-courses" target="_blank" class="int-icon-btn"><i class="int-icon int-icon-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=http://www.open.ac.uk/courses/modules/M364?lkcampaign=tw-courses&text=I%E2%80%99m%20interested%20in%20Fundamentals%20of%20interaction%20design&via=@openuniversity" target="_blank" class="int-icon-btn"><i class="int-icon int-icon-twitter"></i></a>
+      <a href="https://plus.google.com/share?url=http://www.open.ac.uk/courses/modules/M364?lkcampaign=gp-courses" target="_blank" class="int-icon-btn"><i class="int-icon int-icon-google-plus"></i></a>
+  
+  
+</div>
+<div id="divModuleCode" class="unique-module-page" style="visibility:hidden"></div>
+ 
+            
+           <!-- <dl class="breadcrumb">
+              <dt>You are here: </dt>
+              <dd>
+                <span><a href="#">Home</a> &gt; </span>
+                <span><a href="#">Courses</a> &gt; </span>
+                <span>The arts past and present</span>
+              </dd>
+            </dl> -->
+    
+           <!-- <div class="int-social-share">
+                <a href="https://facebook.com/sharer.php?u=YOURURLHERE" target="_blank" class="int-icon-btn"><i class="int-icon int-icon-facebook"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=YOURURLHERE&amp;text=YOURPOSTTITLEHERE&amp;via=YOURTWITTERNAMEHERE" target="_blank" class="int-icon-btn"><i class="int-icon int-icon-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=YOURURLHERE" target="_blank" class="int-icon-btn"><i class="int-icon int-icon-google-plus"></i></a>
+            </div> -->
+            
+              <!-- Product title -->
+           <div class="int-row">
+             
+<h1>Fundamentals of interaction design</h1>
+
+
+
+           </div>
+            
+            <!-- Module Intro -->
+            <div class="int-row">
+              
+    <p>
+	From websites and phones to video games, ATM machines and drinks dispensers, interactive products are very much part of everyday life. But how many are easy, satisfying and enjoyable to use? <i>Fundamentals of interaction design</i> studies the factors, techniques, tools and theories that affect the design of such products. It will teach you a variety of topics, from computing, psychology and graphic design to entertainment, informatics and usability. You’ll learn about the theory underlying interaction design, and acquire practical skills that will equip you to analyse, design, and evaluate the interactive products you use every day.</p>
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+ 
+
+ <h2>
+	Modules count towards OU qualifications</h2>
+<p>
+	OU qualifications are modular in structure; the credits from this undergraduate-level module could count towards a certificate of higher education, diploma of higher education, foundation degree or honours degree.</p>
+<h3>
+	Browse qualifications in related subjects</h3>
+<div class="int-grid8">
+<div id="qual-list">
+<a href="http://www.open.ac.uk/courses/find/computing-and-it">Computing &amp; IT qualifications</a><br></div>
+</div>
+ 
+   
+<!-- linked qualifications.. via JACS codes-->
+  
+ 
+ <!-- <div class='int-grid8'>
+<div id='qual-list'>
+<a href='/courses/find/computing-and-it'>Computing & IT qualifications</a><br/></div>
+</div>
+ -->
+ 
+
+
+            </div>
+            
+          </div>
+          
+          
+           <div class="int-grid4">
+            
+              <!-- Product facts -->
+              <!-- Handle Postgraduate calls.. -->
+
+
+<!-- Undergraduate -->
+
+    <div class="int-quick-facts" style="margin-top:0.2em">
+<h2>Module</h2>
+<dl>
+<dt>Module code</dt>
+<dd class="product-module-code-identifier">
+M364</dd>
+<dt>Credits</dt>
+<dd>
+ 30 </dd>
+<dt>Study level</dt>
+<table>
+<tbody><tr>
+<td>OU</td>
+<td>SCQF</td>
+<td>FHEQ</td>
+</tr>
+<tr>
+<td>
+3</td>
+<td>
+10</td>
+<td class="course-fact">
+6</td>
+</tr></tbody></table>
+<dt>Study method</dt>
+<dd>
+<a href="http://www.open.ac.uk/courses/what-study-like/distance-learning">Distance Learning</a>
+</dd>
+<dt>Module cost</dt>
+<dd>
+See <a href="http://www.open.ac.uk/courses/modules/m364#registration" class="loadTab">Module registration</a>
+</dd>
+<dt>Entry requirements</dt>
+<dd>
+See <a href="http://www.open.ac.uk/courses/modules/m364#am-i-ready" class="loadTab">Am I ready?</a>
+</dd>
+</dl>
+</div>
+
+
+
+
+<!-- CPD -->
+
+
+
+
+ 
+            
+          </div>
+          
+          
+          
+        </div>
+        
+        
+        
+               
+      </div>   <!-- End of container -->
+      
+      <div class="int-container">
+         <div class="int-row">
+           
+             <!-- Video -->
+             
+
+        
+              <!-- Student Reviews -->
+             <div style="overflow:hidden;padding-left:30px;">
+  
+  
+    <div id="student-reviews" style="overflow:hidden;padding-left:30px;">
+<h3>Student Reviews</h3>
+<blockquote class="int-quote-intro">
+<p>
+“This was an excellent course. I studied it at the same time as doing T320. M364 was a much more...”<br>
+<a href="http://www3.open.ac.uk/coursereviews/course.aspx?course=M364">Read more</a></p>
+</blockquote>
+<blockquote class="int-quote-intro">
+<p>
+“I have so many thoughts about this module, I'm just going to make a list...
+ 1) This was an enjoyable...”<br>
+<a href="http://www3.open.ac.uk/coursereviews/course.aspx?course=M364">Read more</a></p>
+</blockquote>
+</div>
+
+  
+  
+  
+
+</div>
+
+           
+         </div>
+      </div>
+      
+      
+      
+      <!-- Request a prospectus section -->
+      <hr>
+<div class="int-container">
+<div class="int-notice int-notice-icon int-notice-icon-prospectus">
+<h2>Request your prospectus</h2>
+<p class="int-intro-text">Explore our subjects and courses</p>
+<p>
+<a href="http://css2.open.ac.uk/outis/1a/O1AProspChoice.asp?CATCODE=M364" class="int-icon-text product-module-prospectus-request"><span>Request your copy now</span><i class="int-icon int-icon-chevron-right" aria-hidden="true"></i></a></p>
+</div>
+</div>
+<hr>
+
+ 
+        
+      
+     
+     
+     
+      
+     </header> <!-- End of header -->
+
+ <!-- tabs section -->
+<div id="int-course-detail-tabs" style="padding-bottom:30px;" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+     
+  <!-- Course nav (sticky) -->
+<nav id="int-course-nav" class="int-sticky-inpage int-5-items">
+<a href="http://www.open.ac.uk/courses/modules/m364#" id="int-course-nav-toggle" class="int-sticky-toggle">
+You are here: <span class="int-active-section">Module details</span>
+<i class="int-icon int-icon-chevron-up"></i>
+<i class="int-icon int-icon-chevron-down"></i>
+</a>
+<div class="int-container">
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="details" aria-labelledby="ui-id-1" aria-selected="true"><a href="http://www.open.ac.uk/courses/modules/m364#details" class="tab-click ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Module details</a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="am-i-ready" aria-labelledby="ui-id-2" aria-selected="false"><a href="http://www.open.ac.uk/courses/modules/m364#am-i-ready" class="tab-click ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Am I ready?</a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="registration" aria-labelledby="ui-id-3" aria-selected="false"><a href="http://www.open.ac.uk/courses/modules/m364#registration" class="tab-click ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Module registration</a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="study-materials" aria-labelledby="ui-id-4" aria-selected="false"><a href="http://www.open.ac.uk/courses/modules/m364#study-materials" class="tab-click ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Study materials</a></li>
+</ul>
+</div>
+</nav>
+<!-- /Course nav (sticky) -->
+
+ 
+        
+    
+         
+  <!-- <div id="int-course-detail-tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+    <nav id="int-course-nav" class="int-sticky-inpage int-5-items">
+      <a href="#" id="int-course-nav-toggle" class="int-sticky-toggle">
+      You are here: <span class="int-active-section">Course details</span>
+      <i class="int-icon int-icon-chevron-up"></i>
+      <i class="int-icon int-icon-chevron-down"></i>
+      </a>
+      <div class="int-container">
+        
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+          <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="course-details" aria-labelledby="ui-id-1" aria-selected="true"><a href="#course-details" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Module details</a></li>
+          <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="am-i-ready" aria-labelledby="ui-id-2" aria-selected="false"><a href="#am-i-ready" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Am I ready?</a></li>
+          <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="course-registration" aria-labelledby="ui-id-3" aria-selected="false"><a href="#course-registration" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Module registration</a></li>
+          <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="study-materials" aria-labelledby="ui-id-4" aria-selected="false"><a href="#study-materials" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Study materials</a></li>
+          
+        </ul>
+      </div>
+    </nav> --> 
+     
+    <section id="details" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+      <div class="int-container">
+          <div class="int-row">
+              <div class="int-grid12">
+                
+  
+     <h2>What you will study</h2>
+  
+       <p>
+	This module will help you to answer the following kinds of question:</p>
+<ul>
+	<li>
+		Why are some websites easier to use than others?</li>
+	<li>
+		Why do people have difficulty using some software packages and not others?</li>
+	<li>
+		How can paper prototypes help improve the design of mobile phones?</li>
+	<li>
+		How can I assess the usability of a video game?</li>
+	<li>
+		As a user, how can I get involved in the re-design of a new information system at work?</li>
+	<li>
+		How and why should I find out more about the users of a software system I’m building?</li>
+	<li>
+		What problems might people with disabilities face when using a software application and how can designs be improved to avoid these problems?</li>
+	<li>
+		What issues should you consider if you wish to design a website to appeal to people from a different country?</li>
+</ul>
+<p>
+	The module is based on the book <i>Interaction Design</i>. To help you explore, understand and deepen your understanding of the topics in this set book, the module includes additional materials such as further activities and extra teaching text, for example on accessibility and internationalisation. It is structured into four blocks.</p>
+<p>
+	The first block provides a broad overview of interaction design, introducing the key issues and activities of the subject, for example, the terminology and fundamental concepts of the area; the main activities involved in interaction design; and the importance of user involvement in the design process. The issues and activities introduced in Block 1 are developed in the remainder of the module. In particular, the three main activities of interaction design are covered in Blocks 2, 3 and 4.</p>
+<p>
+	Block 2 addresses a key activity in interaction design: that of establishing requirements for an interactive product, i.e. what it should do, who will use it, how it will be used, where it will be used and so on. Some of this material may be familiar to you if you have studied any software development modules in the past, but we approach the subject with a different perspective: focusing on making the product usable for the intended population.</p>
+<p>
+	The next block covers the techniques and knowledge necessary to design an interactive product that is accessible and useful to the people who are expected to use it. This includes an understanding of interaction types and interface types, metaphors, conceptual models, cognitive processes (involving memory, attention, learning, etc.), and the use of design approaches for a variety of interactive products such as mobile phones and websites.</p>
+<p>
+	Block 4 presents the techniques and knowledge necessary to evaluate an interactive product. This includes an ethical framework for evaluating with users, techniques and tips for observing users, asking experts and users, and testing with users.</p>
+
+    
+    
+     
+
+
+    
+    
+    
+
+
+
+  
+             </div>
+           </div>
+       </div>
+       <div class="int-container">
+          <div class="int-row">
+             <div class="int-grid9">
+                
+
+
+
+
+ 
+    <h2>Teaching and assessment</h2>
+        
+        
+    
+     <h3>Support from your tutor</h3>
+      <p>
+	You will have a tutor who will help you with the study material and mark and comment on your written work, and whom you can ask for advice and guidance. We may also be able to offer group tutorials or day-schools that you are encouraged, but not obliged, to attend. Where your tutorials are held will depend on the distribution of students taking the module. Contact our <a href="http://www.open.ac.uk/contact">Student Registration &amp; Enquiry Service</a> if you want to know more about study with The Open University before you register.</p>
+   
+    
+    
+    
+      <h3>Assessment</h3>
+      <p>
+	The assessment details for this module can be found in the facts box above.</p>
+<p>
+	You will be expected to submit your tutor-marked assignments (TMAs) online through the eTMA system unless there are some difficulties which prevent you from doing so. In these circumstances, you must negotiate with your tutor to get their agreement to submit your assignment on paper.</p>
+   
+    
+    
+    
+
+
+
+ 
+     <div id="future-availability">
+     <h2>Future availability</h2>
+       <p>
+	The details given here are for the module that starts in October 2014. We expect it to be available once a year.</p>
+ 
+    </div>
+     
+
+<div id="regulations"><h2>Regulations</h2><p>As a student of The Open University, you should be aware of the content of the Module Regulations and the Student Regulations which are available on our <a href="http://www8.open.ac.uk/students/essential-documents/registration-as-a-student">Essential documents website</a>.</p></div>   
+  
+             </div>
+             <div class="int-grid3">
+                <!-- <div class="int-quick-facts">
+  
+  
+  <dl>
+  
+  <dd><h3>Coursework includes</h3>7 Tutor-marked assigments (TMAs)  
+    </dd>
+    <dt></dt>
+ 
+  <dd> End-of-module- assessment  </dd>
+     <dt></dt>
+    <dd> No residential school  </dd>
+  </dl>
+</div> -->
+
+
+
+
+<!-- Undergraduate -->
+
+    <div class="int-quick-facts">
+<dl>
+<dd><h3>Course work includes:</h3></dd>
+<dd>
+<b>4</b> Tutor-marked assignments (TMAs)</dd>
+<dt></dt>
+<dd>
+<b>Examination</b></dd>
+<dt></dt>
+<dd>
+<b>No residential school</b></dd>
+</dl>
+</div>
+
+
+
+
+<!-- CPD -->
+
+<br><!-- Survey results Section.
+     D. Parker
+-->
+
+
+  
+
+ <!-- Handle Undergraduate calls.. -->
+ 
+   <div class="int-quick-facts">
+<dl>
+<dd>
+<div id="course-satisfaction-survey">
+<h3>Course satisfaction survey</h3>
+<p>
+See the <a href="http://www3.open.ac.uk/coursereviews/course.aspx?course=M364#survey">satisfaction survey</a> results for this course.</p>
+</div>
+</dd>
+</dl>
+</div>
+
+  
+
+ <!-- Handle Openings / Access / CPD  calls.. -->
+ 
+    
+
+
+
+
+
+<br>  
+             </div>
+          </div>
+       </div>
+     
+    </section>
+    
+    <section id="am-i-ready" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+      <div class="int-container">
+          <div class="int-row">
+              <div class="int-grid9">
+                
+
+     <h2>Entry</h2>
+  
+       <p>
+	This is an OU level 3 module. OU level 3 modules build on study skills acquired from previous modules at OU levels 1 and 2. They are intended only for students who have recent experience of higher education in a related subject.&nbsp;</p>
+<p>
+	However, these modules do not need to be drawn from other Maths and Computing modules. To study this module you will ideally be a competent user of computer technology with an interest in people and good design. This module will extend the coverage of HCI and GUI development offered by these modules. If you are not following programmes that include <a href="http://www.open.ac.uk/courses/modules/TU100">My digital life  (TU100)</a> or <a href="http://www.open.ac.uk/courses/modules/MT264">Designing applications with Visual Basic  (MT264)</a>, you will not be disadvantaged, as the module does not assume any previous knowledge specific to these modules.</p>
+<p>
+	If you have any doubt about the suitability of the module, please contact our <a href="http://www.open.ac.uk/contact">Student Registration &amp; Enquiry Service</a>.</p>
+
+    
+    
+      <h2>Preparatory work</h2>
+      <p>
+	You may find it useful to visit the <a href="http://www.id-book.com/secondedition/">website</a> that supports <i>Interaction Design</i>, as preparation for the module, and to give you a good idea of the kind of topics covered in M364 (but remember that we provide additional materials too). You will find a variety of resources such as articles, links to other websites and interactive games that you might find interesting. Please note, however, that no preparation is required to study M364.</p>
+   
+    
+    
+
+  
+             </div>
+           </div>
+       </div>
+    </section>
+    
+    <section id="registration" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+      <div class="int-container">
+          <div class="int-row">
+              <div class="int-grid9">
+                <!-- 
+     Handles the rendering of the Regsitration box.
+     D.Parker - 23rd November 2013
+-->
+
+
+  <div id="registerbox">
+<div id="register" class="ou-feature-block">
+<h2>Register</h2>
+<div id="register-top">
+<div class="ou-warning">
+<p>
+Unfortunately, this module is not available to students resident in Kenya.</p>
+</div>
+</div>
+</div>
+</div>
+     
+
+
+
+
+
+
+
+
+
+ 
+             </div>
+           </div>
+       </div>
+    </section>
+    
+    <section id="study-materials" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+      <div class="int-container">
+          <div class="int-row">
+              <div class="int-grid9">
+                
+    
+        <!-- What's included section..-->
+     
+     
+        <h2>What's included</h2>
+     
+        <p>
+	The text book <i>Interaction Design</i> (2nd Edition) by Preece, Rogers and Sharp; module books containing the extension materials; other assessment and support materials; DVD; online forums and a website.</p>
+
+     
+     
+
+
+     <!-- You will need section..-->
+     
+     
+        <h2>You will need</h2>
+     
+        <p>
+	DVD player, colour TV.</p>
+<p>
+	You require internet access at least once a week during the module to download module resources and assignments, submit assignments and keep up to date with module news. In addition, the module assessment will require you to develop paper-based prototypes. You will be required to submit these in an electronic form, so you will need access to a local facility for digitising documents, e.g. a digital camera, a scanner, or a local outlet that will transfer ordinary photographs to a disk.</p>
+
+     
+     
+     
+      <!-- Computing requirements..-->
+     <h3>Computing requirements</h3><p></p><p>
+	You will need a computer with internet access to study this module as it includes online activities, which you can access using a web browser.</p>
+<ul>
+	<li>
+		If you have purchased a new desktop or laptop computer since 2008 you should have no problems completing the online activities.</li>
+	<li>
+		If you’ve got a netbook, tablet or other mobile device check our <a href="http://www.open.ac.uk/courses/pc-requirements/pc-req-1">Technical requirements</a> section.</li>
+	<li>
+		If you use an Apple Mac you will need OS X 10.7 or later.</li>
+</ul>
+<p>
+	You can also visit the <a href="http://www.open.ac.uk/courses/pc-requirements/pc-req-1">Technical requirements</a> section for further computing information (including details of the support we provide).</p>
+<p></p>
+     
+              
+      <!-- Handle Postgraduate calls.. -->
+      
+     
+      <!-- Handle Undergraduate calls.. -->
+      
+          
+      
+     
+       <!-- Handle Openings / Access / CPD  calls.. -->
+       
+
+
+
+
+  <div id="disability">
+     <h2>If you have a disability</h2>
+    
+     <!-- Handle Postgraduate calls.. -->
+      
+    
+     <!-- Handle Undergraduate calls.. -->
+     
+       <p>
+	This module requires students to undertake a range of practical activities including observation, interviewing, critique of design elements and sketching. If you are unable to perform any of these activities without assistance, it may still be possible for you to complete and pass the module. We will provide descriptions of visual module elements where possible which might assist you, but nevertheless you may find it difficult to complete some activities.</p>
+<p>
+	Although we are able to provide a PDF of the bought-in book, <i>Interaction Design</i>, for students who need it, we do not have accessible files to offer to students. The book is heavily diagrammatic and uses boxes of text which create problems when using the PDF with a screen reader. You are strongly advised to discuss this with our <a href="http://www.open.ac.uk/contact">Student Registration &amp; Enquiry Service</a> before applying for the module. &nbsp;</p>
+<text>
+<p>
+	If you have particular study requirements please tell us as soon as possible, as some of our support services may take several weeks to arrange. Find out more about our <a href="http://www.open.ac.uk/courses/do-it/disability" target="_blank">services for disabled students</a>.</p>
+</text>
+      
+    
+     <!-- Handle Openings / Access / CPD  calls.. -->
+     
+    
+      
+  </div>
+
+  
+             </div>
+           </div>
+       </div>
+    </section>
+    
+    
+    
+         
+    
+ </div>
+      
+      <!-- Back to top -->
+      <div id="int-btn-top" class="btn-top">
+		<a href="http://www.open.ac.uk/courses/modules/m364#int-site"><i class="int-icon int-icon-chevron-up"></i><span> Back to top</span></a>
+       </div>
+      
+    </main>    
+    
+    <!-- site footer -->
+     <div class="ab"></div>
+    <div class="int-ouFooter" role="contentinfo">
+	<div class="int-container">
+	   <div class="header">
+		 <div class="crest"><img src="./M364 - Fundamentals of interaction design - Open University Course_files/ou-crest.png" alt="The Open University Crest"></div>
+			 <div class="contact">
+				<h3>The Open University</h3>
+			 </div>
+		   </div>
+		   <div class="nav-footer">
+			 <ul>
+			   <li><a href="http://www.open.ac.uk/contact">Contact us</a></li>
+			   <li><a href="http://www3.open.ac.uk/employment/">Jobs</a></li>
+			   <li><a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/website-accessibility-the-open-university">Accessibility</a></li>
+			   <li><a href="http://www3.open.ac.uk/near-you/wales/p6.asp">Cymraeg </a></li>
+			   <li><a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/conditions-use-open-university-websites">Conditions of use</a></li>
+			   <li><a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/website-privacy-the-ou">Privacy and cookies</a></li>
+			<li><a href="http://www.open.ac.uk/about/main/admin-and-governance/policies-and-statements/copyright-ou-websites">Copyright</a></li>
+			 </ul>
+		   </div>
+		   <div class="small-print">
+				<p class="copyright"><small>© 2014. All rights reserved. The Open University is incorporated by Royal Charter (RC 000391), an exempt charity in England &amp; Wales and a charity registered in Scotland (SC 038302). The Open University is authorised and regulated by the Financial Conduct Authority.
+Open University Student Budget Accounts Limited (OUSBA) is a wholly owned subsidiary of The Open University, Companies House number 303735 and until 31 March 2014 was licensed by the Office of Fair Trading (OFT) under licence number 573250 and from 1 April 2014 is authorised and regulated by the Financial Conduct Authority (FCA) under interim permission number 573250.</small>
+				</p>
+		   </div>
+	</div>
+</div>	
+
+    <!-- /site footer -->
+    
+</div>
+<!-- /ou container -->
+
+    <input type="hidden" id="loaded-components" value="">
+
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/jquery-1.10.2.min.js"></script>
+
+    
+    <script src="./M364 - Fundamentals of interaction design - Open University Course_files/ou-product-qualification.js"></script>
+    <script src="./M364 - Fundamentals of interaction design - Open University Course_files/ou_search.js"></script>
+
+	<!--Vantage files-->
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/ou.widgets.js"></script>
+    <script src="./M364 - Fundamentals of interaction design - Open University Course_files/eep-framework.js"></script>
+    <script src="./M364 - Fundamentals of interaction design - Open University Course_files/ou-primary-navigation.js"></script>
+
+     <script>
+        //Function that has to be called on the page to initialise the nav
+        (function ($, window) {
+
+            window.OU.PrimaryNavigation = new window.OU.DigitalFramework.Global.PrimaryNavigation({
+                serviceLink: true,    //Set to false to switch off the service links toggle functionality and responsive styling i.e. if you are not using service links on the page. Default is true.
+                activeItem: true      //Set to true to initialise the nav item using js, default is false
+            });
+
+        })(jQuery, window);
+    </script>
+
+
+
+	<!--end of Vantage files-->
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/jquery.placeholder.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/jquery.smartresize.js"></script>
+    <script src="./M364 - Fundamentals of interaction design - Open University Course_files/cookies.js"></script>
+    <script src="./M364 - Fundamentals of interaction design - Open University Course_files/app.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/helpers.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/ui-widgets.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/course-details.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/back-to-top.js"></script>
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/modal.js"></script>
+
+    <!--[if lt IE 9]> 
+          <script src="/oudigital/eep/assets/js/vendor/respond.js"></script> 
+        <![endif]-->
+
+	<script src="./M364 - Fundamentals of interaction design - Open University Course_files/main.js"></script>
+	
+	<!-- header and footer -->
+	
+	<!-- end of header and footer -->
+
+
+
+    <script type="text/javascript">
+      $("link[href*='jquery-ui.css']").remove();
+    </script>
+
+     <script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+
+<script type="text/javascript">
+	//<![CDATA[
+if (typeof(Sys.Browser.WebKit) == 'undefined') {
+    Sys.Browser.WebKit = {};
+}
+if (navigator.userAgent.indexOf('WebKit/') > -1) {
+    Sys.Browser.agent = Sys.Browser.WebKit;
+    Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\/(\d+(\.\d+)?)/)[1]);
+    Sys.Browser.name = 'WebKit';
+}
+//]]>
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+WebServiceCall('http://www.open.ac.uk/courses/CMSPages/WebAnalyticsService.asmx','LogHits', '{"pageGUID":"775a3d23-5f91-4d0f-b0d5-f81325688ea0", "referrer":"http://www.open.ac.uk/courses/modules/m364"}')
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+
+
+</body></html>
